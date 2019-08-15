@@ -1,22 +1,21 @@
 <template>
-  <div>
+  <fragment>
     <Header />
-    <div class="hello">
-      <h1>{{ msg }}</h1>
-    </div>
+    <Body />
     <Footer />
-  </div>
+  </fragment>
 </template>
 
 <script>
 import Header from '@/components/Header/Main';
 import Footer from '@/components/Footer/Main';
-import Main from '@/components/Main/Main';
+import Body from '@/components/Main/Main';
+import Fragment from 'vue-fragment'
 export default {
-  name: 'Main',
+  name: 'Index',
   components: {
     Header,
-    Main,
+    Body,
     Footer,
   },
   data () {
@@ -29,7 +28,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.hello {
-  background: gray;
+html {
+  height: 100%;
 }
 </style>

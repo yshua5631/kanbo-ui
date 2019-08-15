@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    This is main
+    网站正在建设中
   </div>
 </template>
 
@@ -18,6 +18,10 @@
 <style scoped>
   .main{
     height: 100px;
-    background: #006ab3;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
   }
 </style>

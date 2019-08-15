@@ -1,7 +1,7 @@
 <template>
-  <div class="footer">
-    This is footer
-  </div>
+  <footer class="footer">
+    联系方式
+  </footer>
 </template>
 
 <script>
@@ -19,5 +19,6 @@
   .footer{
     height: 100px;
     background: #006ab3;
+    padding: 50px;
   }
 </style>

@@ -1,7 +1,8 @@
 <template>
-  <div class="header">
-    This is header
-  </div>
+  <header class="header">
+    <div class="logo"></div>
+    <div class="right">侃博</div>
+  </header>
 </template>
 
 <script>
@@ -17,7 +18,18 @@
 
 <style scoped>
   .header{
-    height: 100px;
+    min-height: 75px;
+    display: flex;
+    box-shadow: 5px 5px 15px 5px #000000;
+  }
+  .logo{
+    flex: 0 0 160px;
+  }
+  .right{
     background: #006ab3;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
   }
 </style>
