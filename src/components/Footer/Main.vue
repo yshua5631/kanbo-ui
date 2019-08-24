@@ -2,17 +2,17 @@
   <footer class="footer">
     <div>
       <div>
-        <span>公司地址： </span>
-        <span>中国上海市奉贤区金碧路585号2幢1层（Building 1 Floor,No.585 Jinbi Road,Fengxian Distruct,Shanghai P. R. China.）</span>
+        <span>联系电话: 021-57487038</span>
       </div>
       <div>
-        <span>Tel:021-57487038</span>
+        <span>传&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp真: 021-57487058</span>
       </div>
       <div>
-        <span>Fax:021-57487058</span>
+        <span>电子邮箱: info@cab-electric.com</span>
       </div>
       <div>
-        <span>Email:info@cab-electric.com</span>
+        <span>公司地址:</span>
+        <span>中国上海市奉贤区金碧路585号2幢1层</span>
       </div>
     </div>
   </footer>
@@ -33,9 +33,8 @@
   .footer{
     display: flex;
     align-items: center;
-    min-height: 100px;
     background: #006ab3;
-    padding: 50px;
+    padding: 20px 30px;
     color: #BBCDDF
   }
 </style>
