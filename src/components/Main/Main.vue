@@ -1,12 +1,16 @@
 <template>
   <div class="main">
-    网站正在建设中
+    <Slider />
   </div>
 </template>
 
 <script>
+  import Slider from '@/components/Main/Slider';
   export default {
     name: 'Main',
+    components: {
+      Slider,
+    },
     data () {
       return {
         name: 'Main'
