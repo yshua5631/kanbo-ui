@@ -1,14 +1,18 @@
 <template>
   <swiper :options="swiperOption" ref="mySwiper" class="swiper">
     <!-- slides -->
-    <swiper-slide>I'm Slide 1</swiper-slide>
-    <swiper-slide>I'm Slide 2</swiper-slide>
-    <swiper-slide>I'm Slide 3</swiper-slide>
-    <swiper-slide>I'm Slide 4</swiper-slide>
-    <swiper-slide>I'm Slide 5</swiper-slide>
-    <swiper-slide>I'm Slide 6</swiper-slide>
-    <swiper-slide>I'm Slide 7</swiper-slide>
-    <swiper-slide>I'm Slide 8</swiper-slide>
+    <swiper-slide>
+      <img src="@/assets/main1.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="@/assets/main2.jpg" />
+    </swiper-slide>
+    <swiper-slide><img src="@/assets/main3.jpg" /></swiper-slide>
+    <swiper-slide><img src="@/assets/main4.jpg" /></swiper-slide>
+    <swiper-slide><img src="@/assets/main5.jpg" /></swiper-slide>
+    <swiper-slide><img src="@/assets/main1.jpg" /></swiper-slide>
+    <swiper-slide><img src="@/assets/main2.jpg" /></swiper-slide>
+    <swiper-slide><img src="@/assets/main3.jpg" /></swiper-slide>
     <!-- Optional controls -->
     <div class="swiper-button-prev" slot="button-prev"></div>
     <div class="swiper-button-next" slot="button-next"></div>
@@ -48,8 +52,14 @@
 
 <style>
   .swiper{
-    height: 200px;
+    height: 400px;
   }
+
+  .swiper img{
+    height: 400px;
+    width: 795px;
+  }
+
   .swiper-slide{
     text-align: center;
   }

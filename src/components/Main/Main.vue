@@ -2,6 +2,10 @@
   <div class="main">
     <div class="container">
       <Slider />
+      <div>
+        <p class="welcome">欢迎来到坎博</p>
+        <p class="introduction">坎博简介坎博简介坎博简介坎博简介坎博简介坎博简介坎博简介坎博简介坎博简介</p>
+      </div>
       <Products />
     </div>
   </div>
@@ -27,12 +31,22 @@
 <style scoped>
   .main{
     margin: 0px 200px;
+    padding: 20px 0;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
   }
+
+  .welcome{
+    font-size: 24px;
+  }
+
+  .introduction{
+    font-size: 16px;
+  }
+
   .container{
     width: 100%;
   }
