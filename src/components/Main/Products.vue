@@ -26,8 +26,8 @@
   .container{
     width: 100%;
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     border: 1px solid gray;
-    flex-wrap: wrap;
   }
 </style>

@@ -24,7 +24,6 @@ export default {
 <style scoped>
   .product{
     position: relative;
-    flex: 0 1 30%;
     width: 234px;
     height: 234px;
     margin: 8px;
