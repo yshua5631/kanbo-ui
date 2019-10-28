@@ -1,36 +1,45 @@
 <template>
-  <div>
-    <a-menu v-model="current" mode="horizontal">
-      <a-sub-menu>
-        <span slot="title" class="submenu-title-wrapper">产品 <a-icon type="down" class="arrowfont" /></span>
-        <a-menu-item key="setting:1">产品1</a-menu-item>
-        <a-menu-item key="setting:2">产品2</a-menu-item>
-      </a-sub-menu>
-      <a-sub-menu>
-        <span slot="title" class="submenu-title-wrapper">公司</span>
-        <a-menu-item key="setting:1">公司简介1</a-menu-item>
-        <a-menu-item key="setting:2">公司简介2</a-menu-item>
-      </a-sub-menu>
-      <a-menu-item key="service">
-        服务
-      </a-menu-item>
-      <a-menu-item key="concat">
-        联系方式
-      </a-menu-item>
-    </a-menu>
-  </div>
+    <fragment>
+      <div class="menu-search">
+        <Menu class="menu" mode="horizontal" :theme="theme1" active-name="1">
+            <Submenu name="1">
+                <template slot="title">
+                    产品
+                </template>
+                <MenuItem name="1-1">产品1</MenuItem>
+                <MenuItem name="1-2">产品2</MenuItem>
+            </Submenu>
+            <Submenu name="2">
+                <template slot="title">
+                    公司
+                </template>
+                <MenuItem name="2-1">创新</MenuItem>
+                <MenuItem name="2-2">历史</MenuItem>
+            </Submenu>
+            <Submenu name="3">
+                <template slot="title">
+                    联系我们
+                </template>
+                <MenuItem name="3-1">地址</MenuItem>
+                <MenuItem name="3-2">如何发现我们</MenuItem>
+            </Submenu>
+        </Menu>
+        <Input class="search" search enter-button placeholder="请输入搜索内容1" />
+      </div>
+    </fragment>
 </template>
 
 <script>
 // import
 // define model
 export default {
-  name: 'Menu',
+  name: 'Menu1',
   components: {
   },
   data () {
     return {
       current: ['mail'],
+      theme1: 'light'
     }
   }
 }
@@ -39,5 +48,24 @@ export default {
 <style scoped>
   .arrowfont{
     font-size: 12px;
+  }
+
+  .menu-search{
+    display: flex;
+    border-bottom: 1px solid #dcdee2;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  .menu{
+    flex: auto;
+  }
+
+  .search{
+    flex: 0 0 200px;
+  }
+
+  .ivu-menu-horizontal.ivu-menu-light:after {
+    display: none;
   }
 </style>
