@@ -1,16 +1,23 @@
 <template>
-  <header class="header">
-    <div class="logo"></div>
-    <div class="right">侃博电气（上海）有限公司  | Canbo Electric (Shanghai) Co.,Ltd.</div>
-    <div class="lng-container" >
-      <div class="lng" v-for='lng in lngs' :key='lng' @click='switchLanguage'>{{lng}}</div>
-    </div>
-  </header>
+  <fragment>
+    <header class="header">
+      <div class="logo"></div>
+      <div class="right">侃博电气（上海）有限公司  | Canbo Electric (Shanghai) Co.,Ltd.</div>
+      <div class="lng-container" >
+        <div class="lng" v-for='lng in lngs' :key='lng' @click='switchLanguage'>{{lng}}</div>
+      </div>
+    </header>
+    <Menu />
+  </fragment>
 </template>
 
 <script>
+  import Menu from '@/components/Menu/main.vue';
   export default {
     name: 'Header',
+    components: {
+      Menu
+    },
     methods: {
       switchLanguage: function(){
         console.log('switchLanguage');

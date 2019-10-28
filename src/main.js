@@ -5,10 +5,13 @@ import Vue from 'vue';
 import Fragment from 'vue-fragment';
 import App from './App'
 import router from './router'
+import Antd from 'ant-design-vue/es'
+import 'ant-design-vue/dist/antd.css'
 
 Vue.config.productionTip = false
 
 Vue.use(Fragment.Plugin)
+Vue.use(Antd)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
