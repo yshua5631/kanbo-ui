@@ -1,5 +1,10 @@
 # kanbo-ui
-
+* [page url](http://www.cab-electric.com/#/)
+* [reference url](https://www.wiska.com/)
+* [aliyun](https://netcn.console.aliyun.com/core/host/list2?spm=5176.12818093.0.dhost.488716d0WFShbj)
+* How to deploy kanbo-ui?
+  * FTP tools?
+* some account
 > A Vue.js project
 
 ## Build Setup
