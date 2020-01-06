@@ -37,7 +37,6 @@
     min-height: 75px;
     font-size: 24px;
     display: flex;
-    box-shadow: 5px 5px 15px 5px #000000;
     background: #006ab3;
   }
   .logo{
