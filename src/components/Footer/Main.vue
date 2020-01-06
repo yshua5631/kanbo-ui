@@ -14,19 +14,22 @@
         <span>公司地址:</span>
         <span>中国上海市奉贤区金碧路585号2幢1层</span>
       </div>
+      <div>
+        <a target="_blank" href="http://beian.miit.gov.cn" style="color: #BBCDDF;">沪ICP备19026354号</a>
+      </div>
     </div>
   </footer>
 </template>
 
 <script>
-  export default {
-    name: 'Footer',
-    data () {
-      return {
-        name: 'Footer'
-      }
+export default {
+  name: 'Footer',
+  data () {
+    return {
+      name: 'Footer'
     }
   }
+}
 </script>
 
 <style scoped>

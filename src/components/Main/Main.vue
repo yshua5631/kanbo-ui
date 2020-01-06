@@ -5,14 +5,14 @@
 </template>
 
 <script>
-  export default {
-    name: 'Main',
-    data () {
-      return {
-        name: 'Main'
-      }
+export default {
+  name: 'Main',
+  data () {
+    return {
+      name: 'Main'
     }
   }
+}
 </script>
 
 <style scoped>
