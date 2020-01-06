@@ -1,0 +1,22 @@
+{
+  "productName": "product1",
+  "catgoryName": "categary1",
+  "attribute": {
+  },
+  "image": "",
+  "list": [{
+    "productName": "subproduct1",
+    "catgoryName": "subcategary1",
+    "attribute": {
+    },
+    "image": "",
+    "list": []
+  }, {
+    "productName": "subproduct1",
+    "catgoryName": "subcategary1",
+    "attribute": {
+    },
+    "image": "",
+    "list": []
+  }]
+}

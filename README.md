@@ -4,7 +4,16 @@
 * [aliyun](https://netcn.console.aliyun.com/core/host/list2?spm=5176.12818093.0.dhost.488716d0WFShbj)
 * How to deploy kanbo-ui?
   * FTP tools?
-* some account
+  * copy dist/static
+  * copy index.cshtml
+* todo
+  1. product detail
+    * How to build product json?
+  2. search
+    * product list
+  3. breadCrumb
+
+
 > A Vue.js project
 
 ## Build Setup
