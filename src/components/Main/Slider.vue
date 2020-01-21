@@ -53,12 +53,6 @@
     },
     mounted() {
       console.log(this.getProduct());
-      axios.get('static/resource/product.json').then((data)=>{
-        const options = {keys: ['productName']};
-        const fuse = new Fuse(data.data, options);
-        console.log(fuse.search('1'));
-        console.log(data);
-      })
       //this.swiper.slideTo(3, 1000, false);
     }
   }

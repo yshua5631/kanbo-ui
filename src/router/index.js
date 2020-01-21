@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '@/components/Main/Main'
 import ProductDetail from '@/components/ProductDetail/ProductDetail'
-
+import SearchResult from '@/components/SearchResult/SearchResult'
 Vue.use(Router)
 
 export default new Router({
@@ -16,6 +16,11 @@ export default new Router({
       path: '/ProductDetail',
       name: 'ProductDetail',
       component: ProductDetail
+    },
+    {
+      path: '/SearchResult/:key',
+      name: 'SearchResult',
+      component: SearchResult
     }
   ]
 })

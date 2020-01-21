@@ -24,7 +24,7 @@
                 <MenuItem name="3-2">如何发现我们</MenuItem>
             </Submenu>
         </Menu>
-        <Input class="search" search enter-button placeholder="请输入搜索内容1" />
+        <Input class="search"  @click.native="search" v-model="searchValue" @on-click="search" search enter-button placeholder="请输入搜索内容1" />
       </div>
     </fragment>
 </template>
@@ -32,6 +32,9 @@
 <script>
 // import
 // define model
+import axios from 'axios'
+import Fuse from 'fuse.js'
+
 export default {
   name: 'Menu1',
   components: {
@@ -39,8 +42,18 @@ export default {
   data () {
     return {
       current: ['mail'],
+      searchValue: "",
       theme1: 'light'
     }
+  },
+  methods: {
+    search: function(value){
+      if(!this.searchValue){
+        return;
+      }
+      this.$router.push({path: `/searchresult/${this.searchValue}`})
+      console.log("search11")
+    },
   }
 }
 </script>
