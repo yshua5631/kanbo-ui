@@ -6,7 +6,7 @@
                 <template slot="title">
                     产品
                 </template>
-                <MenuItem name="1-1">产品1</MenuItem>
+                <MenuItem name="1-1"><router-link to="/ProductDetail">产品1</router-link></MenuItem>
                 <MenuItem name="1-2">产品2</MenuItem>
             </Submenu>
             <Submenu name="2">

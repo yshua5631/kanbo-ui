@@ -14,6 +14,10 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "grunt": "0.3.17",
+    "grunt-contrib": "0.1.7",
+    "grunt-string-replace": "0.1.1-1",
+    "requirejs": "2.0.6",
     "ant-design-vue": "^1.4.3",
     "sanitize.css": "^11.0.0",
     "view-design": "^4.0.2",
@@ -24,6 +28,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
+    "axios": "^0.19.1",
     "babel-core": "^6.22.1",
     "babel-eslint": "^8.2.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
@@ -55,6 +60,7 @@
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
+    "fuse.js": "^3.4.6",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^22.0.4",
     "jest-serializer-vue": "^0.3.0",

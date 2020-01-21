@@ -1,0 +1,43 @@
+[{
+  "productName": "product1",
+  "catgoryName": "categary1",
+  "attribute": {
+  },
+  "image": "",
+  "list": [{
+    "productName": "subproduct1-a",
+    "catgoryName": "subcategary1-a",
+    "attribute": {
+    },
+    "image": "",
+    "list": []
+  }, {
+    "productName": "subproduct1-b",
+    "catgoryName": "subcategary1-b",
+    "attribute": {
+    },
+    "image": "",
+    "list": []
+  }]
+}, {
+  "productName": "product2",
+  "catgoryName": "categary2",
+  "attribute": {
+  },
+  "image": "",
+  "list": [{
+    "productName": "subproduct2-a",
+    "catgoryName": "subcategary2-b",
+    "attribute": {
+    },
+    "image": "",
+    "list": []
+  }, {
+    "productName": "subproduct2-b",
+    "catgoryName": "subcategary2-b",
+    "attribute": {
+    },
+    "image": "",
+    "list": []
+  }]
+}]

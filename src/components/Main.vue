@@ -1,7 +1,6 @@
 <template>
   <fragment>
     <Header />
-    <Body />
     <Footer />
   </fragment>
 </template>
