@@ -1,6 +1,6 @@
 <template>
   <div class="product-detail">
-    <div> Search Result: </div>
+    <div class="search-result"> Search Result: </div>
     <Collapse>
         <Panel v-for="item in searchResult" :key='item.productName'>
             {{item.productName}}
@@ -20,8 +20,11 @@ export default {
       searchResult: []
     }
   },
-  mounted() {
-    console.log(this.$route.params.key)
+  updated() {
+    console.log('updated');
+  },
+  beforeupdate() {
+    console.log('beforeupdate')
     axios.get('static/resource/product.json').then((data)=>{
       const options = {keys: ['productName']};
       const fuse = new Fuse(data.data, options);
@@ -30,7 +33,29 @@ export default {
       console.log(fuse.search(this.$route.params.key));
       console.log(data);
     })
-  }
+  },
+  mounted() {
+    console.log('mounted')
+    axios.get('static/resource/product.json').then((data)=>{
+      const options = {keys: ['productName']};
+      const fuse = new Fuse(data.data, options);
+      const result = fuse.search(this.$route.params.key);
+      this.searchResult = result;
+    })
+  },
+  watch: {
+    $route: function() {
+      axios.get('static/resource/product.json').then((data)=>{
+        const options = {keys: ['productName']};
+        const fuse = new Fuse(data.data, options);
+        const result = fuse.search(this.$route.params.key);
+        this.searchResult = result;
+        console.log(fuse.search(this.$route.params.key));
+        console.log(data);
+      })
+      console.log("watch1");
+    }
+  },
 }
 </script>
 
@@ -41,6 +66,15 @@ export default {
     height: 234px;
     margin: 8px;
     border: 1px solid gray;
+  }
+
+  .search-result{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .product-detail{
+     padding: 40px;
   }
 
   .product:hover .title{

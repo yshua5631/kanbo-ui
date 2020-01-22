@@ -51,6 +51,7 @@
   }
   .lng-container{
     display: flex;
+    color: #BBCDDF;
     flex: 0 0 100px;
     justify-content: space-around;
     align-items: center;

@@ -8,10 +8,17 @@
   * copy index.cshtml
 * todo
   1. product detail
+    * 小幻灯片
+    * 各种需要下载的pdf文档
+    * 产品规格
+    * 推荐列表
     * How to build product json?
   2. search
     * product list
   3. breadCrumb
+  4. 产品列表
+     * 缩略图形式
+
 
 
 > A Vue.js project

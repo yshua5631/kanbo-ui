@@ -24,7 +24,7 @@
                 <MenuItem name="3-2">如何发现我们</MenuItem>
             </Submenu>
         </Menu>
-        <Input class="search"  @click.native="search" v-model="searchValue" @on-click="search" search enter-button placeholder="请输入搜索内容1" />
+        <Input class="search"  @click.native="search" v-model="searchValue" @on-click="search" search enter-button placeholder="请输入搜索内容" />
       </div>
     </fragment>
 </template>
@@ -52,7 +52,7 @@ export default {
         return;
       }
       this.$router.push({path: `/searchresult/${this.searchValue}`})
-      console.log("search11")
+      console.log(this.searchValue)
     },
   }
 }
