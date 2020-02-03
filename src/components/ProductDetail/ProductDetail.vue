@@ -1,67 +1,125 @@
 <template>
   <div class="product-detail">
-    <div> Search Result: </div>
-    <Collapse v-model="value2" accordion>
-        <Panel name="1">
-            史蒂夫·乔布斯
-            <p slot="content">史蒂夫·乔布斯（Steve Jobs），1955年2月24日生于美国加利福尼亚州旧金山，美国发明家、企业家、美国苹果公司联合创办人。</p>
-        </Panel>
-        <Panel name="2">
-            斯蒂夫·盖瑞·沃兹尼亚克
-            <p slot="content">斯蒂夫·盖瑞·沃兹尼亚克（Stephen Gary Wozniak），美国电脑工程师，曾与史蒂夫·乔布斯合伙创立苹果电脑（今之苹果公司）。斯蒂夫·盖瑞·沃兹尼亚克曾就读于美国科罗拉多大学，后转学入美国著名高等学府加州大学伯克利分校（UC Berkeley）并获得电机工程及计算机（EECS）本科学位（1987年）。</p>
-        </Panel>
-        <Panel name="3">
-            乔纳森·伊夫
-            <p slot="content">乔纳森·伊夫是一位工业设计师，现任Apple公司设计师兼资深副总裁，英国爵士。他曾参与设计了iPod，iMac，iPhone，iPad等众多苹果产品。除了乔布斯，他是对苹果那些著名的产品最有影响力的人。</p>
-        </Panel>
-    </Collapse>
+    <p class="name"> Cable 1</p>
+    <div class="product-view">
+      <div class="product-slide">
+          <swiper :options="swiperOption" ref="mySwiper" class="swiper">
+          <!-- slides -->
+          <swiper-slide>
+            <img src="@/assets/imgs/main1.jpg" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="@/assets/imgs/main1.jpg" />
+          </swiper-slide>
+          <swiper-slide><img src="@/assets/imgs/main1.jpg" /></swiper-slide>
+          <swiper-slide><img src="@/assets/imgs/main1.jpg" /></swiper-slide>
+          <swiper-slide><img src="@/assets/imgs/main1.jpg" /></swiper-slide>
+          <swiper-slide><img src="@/assets/imgs/main1.jpg" /></swiper-slide>
+          <swiper-slide><img src="@/assets/imgs/main1.jpg" /></swiper-slide>
+          <swiper-slide><img src="@/assets/imgs/main1.jpg" /></swiper-slide>
+          <!-- Optional controls -->
+          <div class="swiper-button-prev" slot="button-prev"></div>
+          <div class="swiper-button-next" slot="button-next"></div>
+        </swiper>
+      </div>
+      <div class="product-feature">
+
+      </div>
+    </div>
+    <div class="product-package">
+      <Table :columns="columns1" :data="data1"></Table>
+    </div>
   </div>
 </template>
 
 <script>
+import 'swiper/dist/css/swiper.css'
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
 export default {
   name: 'product',
+  components: {
+    swiper,
+    'swiper-slide': swiperSlide,
+  },
   data () {
     return {
-        value2: '1'
+        value2: '1',
+        columns1: [
+            {
+                title: 'No',
+                key: 'no'
+            },
+            {
+                title: 'Type',
+                key: 'type'
+            },
+            {
+                title: 'Size',
+                key: 'size'
+            }
+        ],
+        data1: [
+            {
+                no: '100000',
+                type: 'NMSKV1/4',
+                size: '3mm-7mm'
+            }
+        ],
+        swiperOption: {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        }
     }
-  }
+  },
+  computed: {
+    swiper() {
+      return this.$refs.mySwiper.swiper;
+    }
+  },
 }
 </script>
 
 <style scoped>
-  .product{
-    position: relative;
-    width: 234px;
-    height: 234px;
-    margin: 8px;
-    border: 1px solid gray;
-  }
+.name{
+  font-size: 25px;
+  font-weight: 500;
+}
 
-  .product:hover .title{
-    color: red;
-  }
+.product-detail{
+  padding: 100px;
+}
 
-  .product:hover .overlay{
-    display: block;
-  }
+.product-view{
+  display: flex;
+  height: 300px;
+}
 
-  .overlay{
-    position: absolute;
-    width: 100%;
-    height: 168px;
-    bottom: 0px;
-    right: 0px;
-    opacity: 0.4;
-    display: none;
-  }
+.product-slide{
+  width: 400px;
+}
 
-  .title{
-    font-size: 24px;
-    min-height: 64px;
-    background: #7394AD;
-  }
-  .content{
-    font-size: 14px;
-  }
+.product-feature{
+  flex: 1 0 50px;
+  background: blue;
+}
+
+.product-package{
+  height: 100px;
+  background: yellow;
+}
+
+.swiper{
+  height: 400px;
+}
+
+.swiper img{
+  height: 300px;
+  width: 170px;
+}
+
+.swiper-slide{
+  text-align: center;
+}
 </style>
