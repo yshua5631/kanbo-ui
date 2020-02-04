@@ -1,6 +1,6 @@
 <template>
   <div class="product-detail">
-    <div class="search-result"> Search Result: </div>
+    <div class="search-result"> 搜索结果: </div>
     <Collapse>
         <Panel v-for="item in searchResult" :key='item.productName'>
             {{item.productName}}

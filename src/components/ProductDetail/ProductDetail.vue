@@ -1,6 +1,6 @@
 <template>
   <div class="product-detail">
-    <p class="name"> Cable 1</p>
+    <p class="name">电缆</p>
     <div class="product-view">
       <div class="product-slide">
           <swiper :options="swiperOption" ref="mySwiper" class="swiper">
@@ -23,7 +23,7 @@
         </swiper>
       </div>
       <div class="product-feature">
-
+        <Table :columns="columns2" :data="data2"></Table>
       </div>
     </div>
     <div class="product-package">
@@ -65,6 +65,25 @@ export default {
                 size: '3mm-7mm'
             }
         ],
+        columns2: [
+            {
+                title: 'feature',
+                key: 'feature'
+            },
+            {
+                title: 'param',
+                key: 'param'
+            }
+        ],
+        data2: [
+            {
+              feature: '防护等级',
+              param: 'IP68 / IP69',
+            }, {
+                feature: '温度范围',
+                param: '40-100',
+            }
+        ],
         swiperOption: {
           navigation: {
             nextEl: '.swiper-button-next',
@@ -102,12 +121,10 @@ export default {
 
 .product-feature{
   flex: 1 0 50px;
-  background: blue;
 }
 
 .product-package{
   height: 100px;
-  background: yellow;
 }
 
 .swiper{
