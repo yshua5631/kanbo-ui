@@ -19,8 +19,8 @@ export default {
     Menu
   },
   methods: {
-    switchLanguage: function(){
-      console.log('switchLanguage');
+    switchLanguage: function () {
+      console.log('switchLanguage')
     }
   },
   data () {
