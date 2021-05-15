@@ -20,42 +20,42 @@ export default {
       searchResult: []
     }
   },
-  updated() {
-    console.log('updated');
+  updated () {
+    console.log('updated')
   },
-  beforeupdate() {
+  beforeupdate () {
     console.log('beforeupdate')
-    axios.get('static/resource/product.json').then((data)=>{
-      const options = {keys: ['productName']};
-      const fuse = new Fuse(data.data, options);
-      const result = fuse.search(this.$route.params.key);
-      this.searchResult = result;
-      console.log(fuse.search(this.$route.params.key));
-      console.log(data);
+    axios.get('static/resource/product.json').then((data) => {
+      const options = {keys: ['productName']}
+      const fuse = new Fuse(data.data, options)
+      const result = fuse.search(this.$route.params.key)
+      this.searchResult = result
+      console.log(fuse.search(this.$route.params.key))
+      console.log(data)
     })
   },
-  mounted() {
+  mounted () {
     console.log('mounted')
-    axios.get('static/resource/product.json').then((data)=>{
-      const options = {keys: ['productName']};
-      const fuse = new Fuse(data.data, options);
-      const result = fuse.search(this.$route.params.key);
-      this.searchResult = result;
+    axios.get('static/resource/product.json').then((data) => {
+      const options = {keys: ['productName']}
+      const fuse = new Fuse(data.data, options)
+      const result = fuse.search(this.$route.params.key)
+      this.searchResult = result
     })
   },
   watch: {
-    $route: function() {
-      axios.get('static/resource/product.json').then((data)=>{
-        const options = {keys: ['productName']};
-        const fuse = new Fuse(data.data, options);
-        const result = fuse.search(this.$route.params.key);
-        this.searchResult = result;
-        console.log(fuse.search(this.$route.params.key));
-        console.log(data);
+    $route: function () {
+      axios.get('static/resource/product.json').then((data) => {
+        const options = {keys: ['productName']}
+        const fuse = new Fuse(data.data, options)
+        const result = fuse.search(this.$route.params.key)
+        this.searchResult = result
+        console.log(fuse.search(this.$route.params.key))
+        console.log(data)
       })
-      console.log("watch1");
+      console.log('watch1')
     }
-  },
+  }
 }
 </script>
 

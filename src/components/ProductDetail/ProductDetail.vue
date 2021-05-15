@@ -39,64 +39,64 @@ export default {
   name: 'product',
   components: {
     swiper,
-    'swiper-slide': swiperSlide,
+    'swiper-slide': swiperSlide
   },
   data () {
     return {
-        value2: '1',
-        columns1: [
-            {
-                title: 'No',
-                key: 'no'
-            },
-            {
-                title: 'Type',
-                key: 'type'
-            },
-            {
-                title: 'Size',
-                key: 'size'
-            }
-        ],
-        data1: [
-            {
-                no: '100000',
-                type: 'NMSKV1/4',
-                size: '3mm-7mm'
-            }
-        ],
-        columns2: [
-            {
-                title: 'feature',
-                key: 'feature'
-            },
-            {
-                title: 'param',
-                key: 'param'
-            }
-        ],
-        data2: [
-            {
-              feature: '防护等级',
-              param: 'IP68 / IP69',
-            }, {
-                feature: '温度范围',
-                param: '40-100',
-            }
-        ],
-        swiperOption: {
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
+      value2: '1',
+      columns1: [
+        {
+          title: 'No',
+          key: 'no'
+        },
+        {
+          title: 'Type',
+          key: 'type'
+        },
+        {
+          title: 'Size',
+          key: 'size'
         }
+      ],
+      data1: [
+        {
+          no: '100000',
+          type: 'NMSKV1/4',
+          size: '3mm-7mm'
+        }
+      ],
+      columns2: [
+        {
+          title: 'feature',
+          key: 'feature'
+        },
+        {
+          title: 'param',
+          key: 'param'
+        }
+      ],
+      data2: [
+        {
+          feature: '防护等级',
+          param: 'IP68 / IP69'
+        }, {
+          feature: '温度范围',
+          param: '40-100'
+        }
+      ],
+      swiperOption: {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      }
     }
   },
   computed: {
-    swiper() {
-      return this.$refs.mySwiper.swiper;
+    swiper () {
+      return this.$refs.mySwiper.swiper
     }
-  },
+  }
 }
 </script>
 

@@ -20,42 +20,42 @@
 </template>
 
 <script>
-  import 'swiper/dist/css/swiper.css'
-  import { swiper, swiperSlide } from 'vue-awesome-swiper'
-  import axios from 'axios'
-  import Fuse from 'fuse.js'
-  export default {
-    name: 'Slider',
-    components: {
-      swiper,
-      'swiper-slide': swiperSlide,
-    },
-    data () {
-      return {
-        name: "test",
-        swiperOption: {
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
+import 'swiper/dist/css/swiper.css'
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
+import axios from 'axios'
+import Fuse from 'fuse.js'
+export default {
+  name: 'Slider',
+  components: {
+    swiper,
+    'swiper-slide': swiperSlide
+  },
+  data () {
+    return {
+      name: 'test',
+      swiperOption: {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
         }
-      };
-    },
-    computed: {
-      swiper() {
-        return this.$refs.mySwiper.swiper;
       }
-    },
-    methods: {
-      getProduct(){
-        return "test Product";
-      }
-    },
-    mounted() {
-      console.log(this.getProduct());
-      //this.swiper.slideTo(3, 1000, false);
+    };
+  },
+  computed: {
+    swiper() {
+      return this.$refs.mySwiper.swiper;
     }
+  },
+  methods: {
+    getProduct(){
+      return "test Product";
+    }
+  },
+  mounted() {
+    console.log(this.getProduct());
+    //this.swiper.slideTo(3, 1000, false);
   }
+}
 </script>
 
 <style>

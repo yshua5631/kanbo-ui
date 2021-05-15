@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer :class="$style.footer">
     <div>
       <div>
         <span>联系电话: 021-57487038</span>
@@ -22,17 +22,17 @@
 </template>
 
 <script>
-  export default {
-    name: 'Footer',
-    data () {
-      return {
-        name: 'Footer'
-      }
+export default {
+  name: 'Footer',
+  data () {
+    return {
+      name: 'Footer'
     }
   }
+}
 </script>
 
-<style scoped>
+<style module>
   .footer{
     display: flex;
     align-items: center;

@@ -30,11 +30,6 @@
 </template>
 
 <script>
-// import
-// define model
-import axios from 'axios'
-import Fuse from 'fuse.js'
-
 export default {
   name: 'Menu1',
   components: {
@@ -42,18 +37,18 @@ export default {
   data () {
     return {
       current: ['mail'],
-      searchValue: "",
+      searchValue: '',
       theme1: 'light'
     }
   },
   methods: {
-    search: function(value){
-      if(!this.searchValue){
-        return;
+    search: function (value) {
+      if (!this.searchValue) {
+        return
       }
       this.$router.push({path: `/searchresult/${this.searchValue}`})
       console.log(this.searchValue)
-    },
+    }
   }
 }
 </script>

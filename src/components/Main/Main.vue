@@ -12,20 +12,20 @@
 </template>
 
 <script>
-  import Slider from '@/components/Main/Slider';
+  import Slider from '@/components/Main/Slider'
   import Products from '@/components/Main/Products';
-  export default {
-    name: 'Main',
-    components: {
-      Slider,
-      Products,
-    },
-    data () {
-      return {
-        name: 'Main'
-      }
+export default {
+  name: 'Main',
+  components: {
+    Slider,
+    Products,
+  },
+  data () {
+    return {
+      name: 'Main'
     }
   }
+}
 </script>
 
 <style scoped>

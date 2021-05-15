@@ -12,24 +12,24 @@
 </template>
 
 <script>
-  import Menu from '@/components/Menu/main.vue';
-  export default {
-    name: 'Header',
-    components: {
-      Menu
-    },
-    methods: {
-      switchLanguage: function(){
-        console.log('switchLanguage');
-      }
-    },
-    data () {
-      return {
-        lngs: ['EN', 'CN'],
-        name: 'Header'
-      }
+import Menu from '@/components/Menu/main.vue'
+export default {
+  name: 'Header',
+  components: {
+    Menu
+  },
+  methods: {
+    switchLanguage: function(){
+      console.log('switchLanguage');
+    }
+  },
+  data () {
+    return {
+      lngs: ['EN', 'CN'],
+      name: 'Header'
     }
   }
+}
 </script>
 
 <style scoped>

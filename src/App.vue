@@ -7,15 +7,14 @@
 </template>
 
 <script>
-import Header from '@/components/Header/Main';
-import Footer from '@/components/Footer/Main';
-import Main from '@/components/Main';
+import Header from '@/components/Header/Main'
+import Footer from '@/components/Footer/Main'
 export default {
   name: 'App',
   components: {
-    "app-header": Header,
-    "app-footer": Footer,
-  },
+    'app-header': Header,
+    'app-footer': Footer
+  }
 }
 </script>
 

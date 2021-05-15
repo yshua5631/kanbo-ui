@@ -8,18 +8,18 @@
 </template>
 
 <script>
-  import Product from '@/components/Main/Product';
-  export default {
-    name: 'Products',
-    components: {
-      Product,
-    },
-    data () {
-      return {
-        name: 'Products'
-      }
+import Product from '@/components/Main/Product'
+export default {
+  name: 'Products',
+  components: {
+    Product,
+  },
+  data () {
+    return {
+      name: 'Products'
     }
   }
+}
 </script>
 
 <style scoped>
