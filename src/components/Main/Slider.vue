@@ -22,8 +22,6 @@
 <script>
 import 'swiper/dist/css/swiper.css'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
-import axios from 'axios'
-import Fuse from 'fuse.js'
 export default {
   name: 'Slider',
   components: {
@@ -39,21 +37,21 @@ export default {
           prevEl: '.swiper-button-prev'
         }
       }
-    };
+    }
   },
   computed: {
-    swiper() {
-      return this.$refs.mySwiper.swiper;
+    swiper () {
+      return this.$refs.mySwiper.swiper
     }
   },
   methods: {
-    getProduct(){
-      return "test Product";
+    getProduct () {
+      return 'test Product'
     }
   },
-  mounted() {
-    console.log(this.getProduct());
-    //this.swiper.slideTo(3, 1000, false);
+  mounted () {
+    console.log(this.getProduct())
+    // this.swiper.slideTo(3, 1000, false);
   }
 }
 </script>

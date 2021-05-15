@@ -12,7 +12,7 @@ import Product from '@/components/Main/Product'
 export default {
   name: 'Products',
   components: {
-    Product,
+    Product
   },
   data () {
     return {

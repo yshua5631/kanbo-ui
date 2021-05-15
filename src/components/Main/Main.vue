@@ -13,7 +13,7 @@
 
 <script>
 import Slider from '@/components/Main/Slider'
-import Products from '@/components/Main/Products';
+import Products from '@/components/Main/Products'
 export default {
   name: 'Main',
   components: {
