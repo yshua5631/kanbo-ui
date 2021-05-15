@@ -1,10 +1,10 @@
 <template>
   <fragment>
-    <header class="header">
-      <div class="logo"></div>
-      <div class="right">侃博电气 (上海) 有限公司 | Canbo Electric (Shanghai) Co.,Ltd.</div>
-      <div class="lng-container" >
-        <div class="lng" v-for='lng in lngs' :key='lng' @click='switchLanguage'>{{lng}}</div>
+    <header :class="$style.header">
+      <div :class="$style.logo"></div>
+      <div :class="$style.right">侃博电气 (上海) 有限公司 | Canbo Electric (Shanghai) Co.,Ltd.</div>
+      <div :class="$style.lngcontainer" >
+        <div :class="$style.lng" v-for='lng in lngs' :key='lng' @click='switchLanguage'>{{lng}}</div>
       </div>
     </header>
     <Menu />
@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style module>
   .header{
     min-height: 75px;
     font-size: 24px;
@@ -49,7 +49,7 @@ export default {
     align-items: center;
     padding-left: 20px;
   }
-  .lng-container{
+  .lngcontainer{
     display: flex;
     color: #BBCDDF;
     flex: 0 0 100px;

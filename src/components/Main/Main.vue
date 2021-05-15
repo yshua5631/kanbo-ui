@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scope>
   .main{
     margin: 0px 200px;
     padding: 20px 0;
