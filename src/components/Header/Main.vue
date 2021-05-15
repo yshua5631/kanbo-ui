@@ -2,7 +2,7 @@
   <fragment>
     <header class="header">
       <div class="logo"></div>
-      <div class="right">侃博电气（上海）有限公司  | Canbo Electric (Shanghai) Co.,Ltd.</div>
+      <div class="right">侃博电气 (上海) 有限公司 | Canbo Electric (Shanghai) Co.,Ltd.</div>
       <div class="lng-container" >
         <div class="lng" v-for='lng in lngs' :key='lng' @click='switchLanguage'>{{lng}}</div>
       </div>

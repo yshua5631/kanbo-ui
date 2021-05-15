@@ -5,7 +5,7 @@
         <span>联系电话: 021-57487038</span>
       </div>
       <div>
-        <span>传&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp真: 021-57487058</span>
+        <span>传真: 021-57487058</span>
       </div>
       <div>
         <span>电子邮箱: info@cab-electric.com</span>
