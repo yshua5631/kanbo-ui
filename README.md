@@ -28,6 +28,7 @@
 ``` bash
 # build with Docker
 docker build -t kanbo:0.0.1 .
+docker-compose -f deployment.yml up -d
 
 # install dependencies
 npm install
