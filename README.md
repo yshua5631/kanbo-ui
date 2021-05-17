@@ -26,6 +26,9 @@
 ## Build Setup
 
 ``` bash
+# build with Docker
+docker build -t kanbo:0.0.1 .
+
 # install dependencies
 npm install
 
