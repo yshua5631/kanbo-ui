@@ -2,7 +2,6 @@ version: '3'
 services:
   kanbo-ui:
     image: kanbo:0.0.1
-    restart: always
     container_name: kanbo-ui
     ports:
-      - 8081:80
+      - "8081:80"
