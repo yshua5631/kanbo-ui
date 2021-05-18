@@ -61,6 +61,7 @@ export default {
     padding: 72px 32px;
     background-size: cover;
     color: white;
+    filter: brightness(0.9);
   }
 
   .detail:not(:first-child) {
