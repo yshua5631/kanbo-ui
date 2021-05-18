@@ -28,5 +28,6 @@ export default {
 <style scoped>
 html {
   height: 100%;
+  font-family: 'Yellowtail', serif, system-ui;
 }
 </style>

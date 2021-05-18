@@ -1,12 +1,8 @@
 <template>
   <div class="main">
     <div class="container">
-      <Slider />
-      <div>
-        <p class="welcome">欢迎来到坎博</p>
-        <p class="introduction">坎博简介坎博简介坎博简介坎博简介坎博简介坎博简介坎博简介坎博简介坎博简介</p>
-      </div>
-      <Products />
+      <Introduction />
+      <AboutUs />
     </div>
   </div>
 </template>
@@ -14,11 +10,16 @@
 <script>
 import Slider from '@/components/Main/Slider'
 import Products from '@/components/Main/Products'
+import Introduction from '@/components/Main/Introduction'
+import AboutUs from '@/components/Main/AboutUs'
+
 export default {
   name: 'Main',
   components: {
     Slider,
-    Products
+    Products,
+    Introduction,
+    AboutUs
   },
   data () {
     return {
@@ -30,8 +31,8 @@ export default {
 
 <style scope>
   .main{
-    margin: 0px 200px;
-    padding: 20px 0;
+    margin: 0px 150px;
+    padding: 40px 0;
     flex: 1;
     display: flex;
     justify-content: center;
