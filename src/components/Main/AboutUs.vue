@@ -41,8 +41,8 @@ export default {
 
 <style module>
   .aboutus{
-    position: relative;
     margin-top: 100px;
+    margin: 100px 150px 0 150px;
   }
 
   .name {

@@ -6,13 +6,11 @@
 </template>
 
 <script>
-import Header from '@/components/Header/Main'
 import Footer from '@/components/Footer/Main'
 import Body from '@/components/Main/Main'
 export default {
   name: 'Index',
   components: {
-    Header,
     Body,
     Footer
   },

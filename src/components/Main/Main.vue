@@ -31,8 +31,7 @@ export default {
 
 <style scope>
   .main{
-    margin: 0px 150px;
-    padding: 40px 0;
+    padding-bottom: 40px;
     flex: 1;
     display: flex;
     justify-content: center;

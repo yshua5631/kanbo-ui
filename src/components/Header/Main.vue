@@ -24,7 +24,7 @@ export default {
   .header{
     min-height: 50px;
     font-size: 16px;
-    display: flex;
+    display: none;
     background: #000;
     color: rgb(247, 247, 247);
     justify-content: center;

@@ -1,25 +1,21 @@
 <template>
   <fragment>
-    <div :class="$style.introduction">
-      <p :class="$style.name"> 侃博电气 </p>
-      <p :class="$style.telephone"> 021-57487038 </p>
+    <div :class="$style.banner" v-bind:style="{ backgroundImage: 'url(' + Banner + ')' }">
     </div>
-    <div :class="$style.banner">
-      <img src="@/assets/main1.jpeg"  alt="banner"/>
-    </div>
-    <p :class="$style.welcome"> welcome to visit cab electric </p>
   </fragment>
 </template>
 
 <script>
+import Banner from '@/assets/banner.jpeg'
 export default {
-  name: 'Header',
+  name: 'Introduction',
   components: {
   },
   methods: {
   },
   data () {
     return {
+      Banner
     }
   }
 }
@@ -42,7 +38,8 @@ export default {
   }
 
   .banner {
-    margin-top: 40px;
+    height: 450px;
+    background-size: cover;
   }
 
   .banner img{
