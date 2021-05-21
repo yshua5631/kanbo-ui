@@ -14,8 +14,8 @@
     <swiper-slide><img src="@/assets/main1.jpeg" /></swiper-slide>
     <swiper-slide><img src="@/assets/main1.jpeg" /></swiper-slide>
     <!-- Optional controls -->
-    <div class="swiper-button-prev" slot="button-prev"></div>
-    <div class="swiper-button-next" slot="button-next"></div>
+    <div class="swiper-button-prev" test="button-prev"></div>
+    <div class="swiper-button-next" test="button-next"></div>
   </swiper>
 </template>
 

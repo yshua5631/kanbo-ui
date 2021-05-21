@@ -18,8 +18,8 @@
           <swiper-slide><img src="@/assets/imgs/main1.jpg" /></swiper-slide>
           <swiper-slide><img src="@/assets/imgs/main1.jpg" /></swiper-slide>
           <!-- Optional controls -->
-          <div class="swiper-button-prev" slot="button-prev"></div>
-          <div class="swiper-button-next" slot="button-next"></div>
+          <div class="swiper-button-prev" test="button-prev"></div>
+          <div class="swiper-button-next" test="button-next"></div>
         </swiper>
       </div>
       <div class="product-feature">

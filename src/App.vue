@@ -1,31 +1,32 @@
 <template>
-  <div id="app">
-    <app-header />
-    <router-view/>
-    <app-footer />
-  </div>
+  <Header />
+  <router-view/>
+  <Footer />
 </template>
 
 <script>
 import Header from '@/components/Header/Main'
 import Footer from '@/components/Footer/Main'
+
 export default {
   name: 'App',
   components: {
-    'app-header': Header,
-    'app-footer': Footer
+    Header,
+    Footer
   }
 }
 </script>
 
-<style>
-#app {
-  color: #2c3e50;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+<style module>
+.ricky{
+  color: red;
 }
-html, body{
-  height: 100%;
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>

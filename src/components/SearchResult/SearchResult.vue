@@ -4,7 +4,7 @@
     <Collapse>
         <Panel v-for="item in searchResult" :key='item.productName'>
             {{item.productName}}
-            <p slot="content">{{item.productName}}</p>
+            <p test="content">{{item.productName}}</p>
         </Panel>
     </Collapse>
   </div>

@@ -8,16 +8,12 @@
 </template>
 
 <script>
-import Slider from '@/components/Main/Slider'
-import Products from '@/components/Main/Products'
 import Introduction from '@/components/Main/Introduction'
 import AboutUs from '@/components/Main/AboutUs'
 
 export default {
   name: 'Main',
   components: {
-    Slider,
-    Products,
     Introduction,
     AboutUs
   },
