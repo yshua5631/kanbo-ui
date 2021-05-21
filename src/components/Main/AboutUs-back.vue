@@ -3,18 +3,15 @@
     <div :class="$style.aboutus">
       <p :class="$style.name"> 关于我们 </p>
       <div :class="$style.container">
-        <div :class="$style.detail">
-          <img src="@/assets/download.svg" alt="download" />
+        <div :class="$style.detail" v-bind:style="{ backgroundImage: 'url(' + MainImage + ')' }">
           <p :class="$style.title">开关&连接器......</p>
           <p :class="$style.content">按钮开关 隔离开关 转换开关 MCB  RCCB 刀熔开关 接线端子</p>
         </div>
-        <div :class="$style.detail">
-          <img src="@/assets/download.svg" alt="download" />
+        <div :class="$style.detail" v-bind:style="{ backgroundImage: 'url(' + MainImage2 + ')' }">
           <p :class="$style.title">机柜附件......</p>
           <p :class="$style.content">格兰头 穿线板 风扇 温控器 母线系统</p>
         </div>
-        <div :class="$style.detail" >
-          <img src="@/assets/download.svg" alt="download" />
+        <div :class="$style.detail" v-bind:style="{ backgroundImage: 'url(' + MainImage + ')' }">
           <p :class="$style.title">配线器材&工具......</p>
           <p :class="$style.content">冷压端子，标识系统，电气测试附件，剪线工具，剥线工具压接工具。</p>
         </div>
@@ -26,7 +23,6 @@
 <script>
 import MainImage from '@/assets/main.jpeg'
 import MainImage2 from '@/assets/main2.jpeg'
-import Download from '@/assets/download.svg'
 
 export default {
   name: 'AboutUs',
@@ -37,8 +33,7 @@ export default {
   data () {
     return {
       MainImage,
-      MainImage2,
-      Download
+      MainImage2
     }
   }
 }
@@ -65,12 +60,8 @@ export default {
     height: 339px;
     padding: 72px 32px;
     background-size: cover;
-    color: black;
-    text-align: center;
-  }
-
-  .detail img {
-    width: 52px;
+    color: white;
+    filter: brightness(0.9);
   }
 
   .detail:not(:first-child) {
@@ -79,7 +70,6 @@ export default {
 
   .title{
     font-size: 22px;
-    margin-top: 20px;
   }
 
   .content{

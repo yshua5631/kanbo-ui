@@ -8,10 +8,17 @@ module.exports = {
         // Vue CLI v3 用户可参考 css-loader v1 文档
         // https://github.com/webpack-contrib/css-loader/tree/v1.0.1
         modules: {
-          localIdentName: '[name]-[local]-[hash:base64:8]'
-        },
-        localsConvention: 'camelCaseOnly'
+          localIdentName: '[name]__[local]--[hash:base64:8]'
+        }
       }
     }
+  },
+  chainWebpack: config => {
+    config
+      .plugin('html')
+      .tap(args => {
+        args[0].title= '侃博电气'
+        return args
+      })
   }
 }
