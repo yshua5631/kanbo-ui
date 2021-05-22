@@ -26,6 +26,6 @@ export default {
 <style scoped>
 html {
   height: 100%;
-  font-family: 'Yellowtail', serif, system-ui;
+  font-family: "Futura LT W01 Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 </style>

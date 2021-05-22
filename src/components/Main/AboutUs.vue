@@ -1,31 +1,25 @@
 <template>
   <fragment>
     <div :class="$style.aboutus">
-      <p :class="$style.name"> 关于我们 </p>
       <div :class="$style.container">
-        <div :class="$style.detail">
-          <img src="@/assets/download.svg" alt="download" />
-          <p :class="$style.title">开关&连接器......</p>
-          <p :class="$style.content">按钮开关 隔离开关 转换开关 MCB  RCCB 刀熔开关 接线端子</p>
+        <div :class="$style.detail" v-bind:style="{ backgroundImage: 'url(' + MainImage + ')' }">
+          <p :class="$style.title">CABLE GLANDS</p>
         </div>
-        <div :class="$style.detail">
-          <img src="@/assets/download.svg" alt="download" />
-          <p :class="$style.title">机柜附件......</p>
-          <p :class="$style.content">格兰头 穿线板 风扇 温控器 母线系统</p>
+        <div :class="$style.detail" v-bind:style="{ backgroundImage: 'url(' + MainImage2 + ')' }">
+          <p :class="$style.title">CIRCULAR CONNECTORS</p>
         </div>
-        <div :class="$style.detail" >
-          <img src="@/assets/download.svg" alt="download" />
-          <p :class="$style.title">配线器材&工具......</p>
-          <p :class="$style.content">冷压端子，标识系统，电气测试附件，剪线工具，剥线工具压接工具。</p>
-        </div>
+      </div>
+      <div :class="$style.bigcategory" v-bind:style="{ backgroundImage: 'url(' + MainImage3 + ')' }">
+        <p :class="$style.title">Heating equipment</p>
       </div>
     </div>
   </fragment>
 </template>
 
 <script>
-import MainImage from '@/assets/main.jpeg'
-import MainImage2 from '@/assets/main2.jpeg'
+import MainImage from '@/assets/category1.png'
+import MainImage2 from '@/assets/category2.png'
+import MainImage3 from '@/assets/category3.jpeg'
 import Download from '@/assets/download.svg'
 
 export default {
@@ -38,6 +32,7 @@ export default {
     return {
       MainImage,
       MainImage2,
+      MainImage3,
       Download
     }
   }
@@ -48,6 +43,8 @@ export default {
   .aboutus{
     margin-top: 100px;
     margin: 100px 150px 0 150px;
+    font-weight: 300;
+    font-family: "Futura LT W01 Book","Helvetica Neue",Helvetica,Arial,sans-serif;
   }
 
   .name {
@@ -62,11 +59,19 @@ export default {
 
   .detail {
     flex: 1 1 30px;
-    height: 339px;
     padding: 72px 32px;
     background-size: cover;
     color: black;
     text-align: center;
+    height: 196px;
+    position: relative;
+  }
+
+  .bigcategory {
+    margin-top: 50px;
+    height: 400px;
+    background-size: cover;
+    position: relative;
   }
 
   .detail img {
@@ -74,12 +79,26 @@ export default {
   }
 
   .detail:not(:first-child) {
-    margin-left: 2px;
+    margin-left: 50px;
   }
 
   .title{
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 20px;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    color: white;
+    background-color: #009ee3;
+    padding: 9px 28px;
+  }
+
+  .detail:hover .title {
+    background-color: #235CA2;
+  }
+
+  .bigcategory:hover .title {
+    background-color: #235CA2;
   }
 
   .content{
