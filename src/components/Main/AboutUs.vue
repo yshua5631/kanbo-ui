@@ -6,7 +6,9 @@
           <p :class="$style.title">CABLE GLANDS</p>
         </div>
         <div :class="$style.detail" v-bind:style="{ backgroundImage: 'url(' + MainImage2 + ')' }">
-          <p :class="$style.title">CIRCULAR CONNECTORS</p>
+          <p :class="$style.title">
+            <router-link to="/download">CIRCULAR CONNECTORS</router-link>
+          </p>
         </div>
       </div>
       <div :class="$style.bigcategory" v-bind:style="{ backgroundImage: 'url(' + MainImage3 + ')' }">
@@ -91,6 +93,12 @@ export default {
     color: white;
     background-color: #009ee3;
     padding: 9px 28px;
+  }
+
+  .title a {
+    text-decoration: none;
+    color: white;
+    background: none;
   }
 
   .detail:hover .title {

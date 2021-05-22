@@ -38,8 +38,8 @@ export default {
   }
 
   .banner {
-    height: 450px;
-    background-size: cover;
+    height: 354px;
+    background-size: contain;
     color: white;
     padding: 120px 40px 0 40px;
     font-weight: 300;

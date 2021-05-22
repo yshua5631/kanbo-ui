@@ -2,6 +2,7 @@ import { createRouter,createWebHashHistory} from "vue-router";
 import Main from '@/components/Main/Main'
 import ProductDetail from '@/components/ProductDetail/ProductDetail'
 import SearchResult from '@/components/SearchResult/SearchResult'
+import DownLoad from '@/components/Main/DownLoad'
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/SearchResult/:key',
     name: 'SearchResult',
     component: SearchResult
+  },
+  {
+    path: '/downLoad',
+    name: 'DownLoad',
+    component: DownLoad
   }
 ]
 
