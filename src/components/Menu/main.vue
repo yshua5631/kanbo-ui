@@ -3,7 +3,7 @@
       <div class="menu-search">
         <Menu class="menu" mode="horizontal" :theme="theme1" active-name="1">
             <Submenu name="1">
-                <template slot="title">
+                <template v-slot:title>
                     产品
                 </template>
                 <MenuItem name="1-1">
@@ -12,14 +12,14 @@
                 <MenuItem name="1-2">产品2</MenuItem>
             </Submenu>
             <Submenu name="2">
-                <template slot="title">
+                <template v-slot:title>
                     公司
                 </template>
                 <MenuItem name="2-1">创新</MenuItem>
                 <MenuItem name="2-2">历史</MenuItem>
             </Submenu>
             <Submenu name="3">
-                <template slot="title">
+                <template v-slot:title>
                     联系我们
                 </template>
                 <MenuItem name="3-1">

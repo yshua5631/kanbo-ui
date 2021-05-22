@@ -3,16 +3,26 @@
     <div :class="$style.aboutus">
       <div :class="$style.container">
         <div :class="$style.detail" v-bind:style="{ backgroundImage: 'url(' + MainImage + ')' }">
-          <p :class="$style.title">CABLE GLANDS</p>
+          <div :class="$style.title">
+            普通工业用产品
+            <p :class="$style.small">- 电缆接头</p>
+            <p :class="$style.small">- 工业机箱</p>
+            <p :class="$style.small">- 穿线法兰板</p>
+            <p :class="$style.small">- 穿线保护软管</p>
+          </div>
         </div>
         <div :class="$style.detail" v-bind:style="{ backgroundImage: 'url(' + MainImage2 + ')' }">
-          <p :class="$style.title">
-            <router-link to="/download">CIRCULAR CONNECTORS</router-link>
-          </p>
+          <div :class="$style.title">
+            <router-link to="/download">危险区域用产品</router-link>
+            <p :class="$style.small">- 防爆机箱</p>
+            <p :class="$style.small">- 防爆连接器</p>
+            <p :class="$style.small">- 防爆电缆接头</p>
+            <p :class="$style.small">- 防爆配电装置</p>
+          </div>
         </div>
       </div>
       <div :class="$style.bigcategory" v-bind:style="{ backgroundImage: 'url(' + MainImage3 + ')' }">
-        <p :class="$style.title">Heating equipment</p>
+        <p :class="$style.title">电气集成和工程服务</p>
       </div>
     </div>
   </fragment>
@@ -54,9 +64,15 @@ export default {
     font-size: 26px;
   }
 
+  .small{
+    font-size: 12px;
+    margin-top: 10px;
+    display: none;
+  }
+
   .container{
-    display: flex;
     margin-top: 30px;
+    display: flex;
   }
 
   .detail {
@@ -76,6 +92,10 @@ export default {
     position: relative;
   }
 
+  .bigcategory .title {
+    width: 240px;
+  }
+
   .detail img {
     width: 52px;
   }
@@ -87,11 +107,13 @@ export default {
   .title{
     font-size: 18px;
     margin-top: 20px;
+    text-align: left;
     position: absolute;
     left: 0px;
     top: 20px;
     color: white;
-    background-color: #009ee3;
+    width: 186px;
+    background-color: rgba(0, 158, 227,0.8);
     padding: 9px 28px;
   }
 
@@ -103,6 +125,10 @@ export default {
 
   .detail:hover .title {
     background-color: #235CA2;
+  }
+
+  .detail:hover .small {
+    display: block;
   }
 
   .bigcategory:hover .title {

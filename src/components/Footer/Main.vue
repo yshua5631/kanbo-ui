@@ -4,24 +4,17 @@
       <div :class="$style.content">
         <p :class="$style.title">产品方案</p>
         <p :class="$style.item">电缆接头</p>
-        <p :class="$style.item">Exios接头</p>
-        <p :class="$style.item">圆形接插件</p>
-        <p :class="$style.item">Jaeger接插件</p>
-        <p :class="$style.item">工业控制箱</p>
-        <p :class="$style.item">软管</p>
+        <p :class="$style.item">穿线保护软管</p>
+        <p :class="$style.item">工业机箱</p>
+        <p :class="$style.item">防爆机箱</p>
+        <p :class="$style.item">防爆连接管</p>
+        <p :class="$style.item">防爆机箱和配电装置</p>
       </div>
       <div :class="$style.content">
-        <p :class="$style.title">产品视频</p>
-        <p :class="$style.item">电器附件</p>
+        <p :class="$style.title">安装视频</p>
         <p :class="$style.item">电缆接头</p>
-        <p :class="$style.item">圆形接插件</p>
-      </div>
-      <div :class="$style.content">
-        <p :class="$style.title">技术信息</p>
-        <p :class="$style.item">电缆接头</p>
-        <p :class="$style.item">圆形接插件</p>
-        <p :class="$style.item">Jaeger接插件</p>
-        <p :class="$style.item">工业控制箱</p>
+        <p :class="$style.item">穿线保护软管</p>
+        <p :class="$style.item">防爆连接器</p>
       </div>
       <div :class="$style.content">
         <p :class="$style.title">资源下载</p>
@@ -42,8 +35,7 @@
     <div :class="$style.right">
       <div :class="$style.content">
         <p :class="$style.title">联系我们CONTACT</p>
-        <p :class="$style.item">联系电话: 021-57487038</p>
-        <p :class="$style.item">传真: 021-57487058</p>
+        <p :class="$style.item">联系电话: 021-57487038 / 13761088209</p>
         <p :class="$style.item">电子邮箱: info@cab-electric.com</p>
         <p :class="$style.item">公司地址: 中国上海市奉贤区金碧路585号2幢1层</p>
       </div>
@@ -103,5 +95,6 @@ export default {
 
   .copyright {
     margin-top: 30px;
+    font-size: 13px;
   }
 </style>
