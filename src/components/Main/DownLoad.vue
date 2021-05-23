@@ -4,13 +4,17 @@
     <div :class="$style.download">
       <p :class="$style.title"> 资料样本和认证 </p>
       <div :class="$style.list">
-        <a :class="$style.item" href="http://www.gov.cn/zhengce/pdfFile/1992muLu.pdf">
+        <a :class="$style.item" href="https://share.weiyun.com/bD2loSlV">
           <img src="@/assets/download/d1.jpeg" alt="download">
-          <p :class="$style.description"> VariaPro电缆接头 </p>
+          <p :class="$style.description"> IOS认证和防爆合格证 </p>
         </a>
-        <a :class="$style.item">
-          <img src="@/assets/download/d1.jpeg" alt="download">
-          <p :class="$style.description"> JAEGER样本 </p>
+        <a :class="$style.item" href="https://share.weiyun.com/89IF7jiL">
+          <img src="@/assets/download/d2.jpeg" alt="download">
+          <p :class="$style.description"> 防爆连接器 </p>
+        </a>
+        <a :class="$style.item" href="https://share.weiyun.com/89IF7jiL">
+          <img src="@/assets/download/d3.jpeg" alt="download">
+          <p :class="$style.description"> 防爆连接器 </p>
         </a>
       </div>
     </div>

@@ -2,7 +2,7 @@
   <fragment>
     <header :class="$style.header">
       <router-link to="/" :class="$style.logo">
-        <img src="@/assets/logo.png" alt="logo"/>
+        <img src="@/assets/logo1.svg" alt="logo"/>
       </router-link>
       <div :class="$style.menu">
         <span :class="$style.item"> 电缆密封保护技术</span>
