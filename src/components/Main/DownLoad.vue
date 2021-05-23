@@ -51,6 +51,10 @@ export default {
     margin-left: 36px;
   }
 
+  .item {
+    text-decoration: none;
+  }
+
   .item img {
     width: 148px;
   }
