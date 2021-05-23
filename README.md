@@ -28,7 +28,15 @@
 ``` bash
 # build with Docker
 docker build -t kanbo:0.0.1 .
-docker-compose -f deployment.yml up -d
+
+# Deployment
+
+ ## Docker-compose
+ docker-compose -f deployment.yml up -d
+
+ ## Deploy on nginx
+ cp -r dist/* /var/www/html/cab/
+
 
 # install dependencies
 npm install
