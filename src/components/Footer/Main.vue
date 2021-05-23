@@ -64,7 +64,7 @@ export default {
     display: flex;
     justify-content: space-between;
     background-color: #333;
-    padding: 40px 130px;
+    padding: 40px 136px 40px 90px;
     color: #BBCDDF
   }
 
