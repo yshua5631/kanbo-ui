@@ -30,7 +30,7 @@ export default {
 }
 </script>
 
-<style module>
+<style module lang="less">
   .header{
     font-size: 16px;
     background-color: white;
@@ -54,29 +54,23 @@ export default {
     padding-left: 20px;
     margin-left: 140px;
     font-size: 13px;
+    .email {
+      margin-left: 10px;
+    }
   }
 
   .menu {
     display: flex;
+    .item {
+      font-size: 13px;
+      padding: 15px 16px;
+      text-transform: lowercase;
+      &:hover {
+        color: #009ee3;
+        font-size: 13px;
+        background-color: white;
+      }
+    }
   }
 
-  .email {
-    margin-left: 10px;
-  }
-
-  .item {
-    font-size: 13px;
-    padding: 15px 16px;
-    text-transform: lowercase;
-  }
-
-  .item img {
-    height: 10px;
-  }
-
-  .item:hover {
-    color: #009ee3;
-    font-size: 13px;
-    background-color: white;
-  }
 </style>
