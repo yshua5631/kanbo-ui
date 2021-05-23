@@ -57,7 +57,7 @@ export default {
 
   .banner {
     height: 354px;
-    background-size: contain;
+    background-size: cover;
     color: white;
     padding: 62px 40px 0 62px;
     font-weight: 300;
