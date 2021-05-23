@@ -29,8 +29,8 @@
 </template>
 
 <script>
-import MainImage from '@/assets/category1.png'
-import MainImage2 from '@/assets/category2.png'
+import MainImage from '@/assets/category1.jpeg'
+import MainImage2 from '@/assets/category2.jpeg'
 import MainImage3 from '@/assets/category3.jpeg'
 import Download from '@/assets/download.svg'
 

@@ -4,14 +4,14 @@
     <div :class="$style.download">
       <p :class="$style.title"> 资料样本和认证 </p>
       <div :class="$style.list">
-        <div :class="$style.item">
+        <a :class="$style.item" href="http://www.gov.cn/zhengce/pdfFile/1992muLu.pdf">
           <img src="@/assets/download/d1.jpeg" alt="download">
           <p :class="$style.description"> VariaPro电缆接头 </p>
-        </div>
-        <div :class="$style.item">
+        </a>
+        <a :class="$style.item">
           <img src="@/assets/download/d1.jpeg" alt="download">
           <p :class="$style.description"> JAEGER样本 </p>
-        </div>
+        </a>
       </div>
     </div>
   </fragment>
@@ -19,6 +19,7 @@
 
 <script>
 import Introduction from '@/components/Main/Introduction'
+
 export default {
   name: 'Header',
   components: {
@@ -57,6 +58,7 @@ export default {
   .list {
     margin-top: 36px;
     display: flex;
+    text-decoration: none;
   }
 
   .description {
