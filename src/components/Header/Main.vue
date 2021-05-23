@@ -1,9 +1,9 @@
 <template>
   <fragment>
     <header :class="$style.header">
-      <div :class="$style.logo">
+      <router-link to="/" :class="$style.logo">
         <img src="@/assets/logo.png" alt="logo"/>
-      </div>
+      </router-link>
       <div :class="$style.menu">
         <span :class="$style.item"> 电缆密封保护技术</span>
         <span :class="$style.item"> 电气安全连接技术 </span>
