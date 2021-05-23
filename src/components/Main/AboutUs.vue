@@ -54,7 +54,7 @@ export default {
 <style module>
   .aboutus{
     margin-top: 100px;
-    margin: 100px 150px 0 150px;
+    margin: 100px 10% 0 10%;
     font-weight: 300;
     font-family: "Futura LT W01 Book","Helvetica Neue",Helvetica,Arial,sans-serif;
   }
@@ -78,18 +78,18 @@ export default {
   .detail {
     flex: 1 1 30px;
     padding: 72px 32px;
-    background-size: cover;
+    background-size: contain;
     color: black;
     text-align: center;
-    height: 196px;
     position: relative;
+    aspect-ratio: 2.76 / 1;
   }
 
   .bigcategory {
     margin-top: 50px;
-    height: 400px;
-    background-size: cover;
+    background-size: contain;
     position: relative;
+    aspect-ratio: 2.825 / 1;
   }
 
   .bigcategory .title {

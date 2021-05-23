@@ -1,28 +1,42 @@
 <template>
   <fragment>
     <div :class="$style.banner" v-bind:style="{ backgroundImage: 'url(' + Banner + ')' }">
-      <p :class="$style.title">愿景</p>
-      <p :class="$style.content">提供可靠的电缆密封紧固和电气连接产品及其方案，力争成为全球客户之首选；</p>
-      <p :class="$style.title"> 策略</p>
-      <p :class="$style.content">在所选领域持续改善、奋力创新，通过为客户提供安全、可靠、敏捷的供应链
-服务，寻求能够提供市场领先地位之础石；</p>
-      <p></p>
+      <fragment v-if="isDownload">
+        <p :class="$style.title">侃博电气 安心连接</p>
+        <p :class="$style.content">您身边的电缆密封保护和安全电气连接专家</p>
+      </fragment>
+      <fragment v-else>
+        <p :class="$style.title">愿景</p>
+        <p :class="$style.content">提供可靠的电缆密封紧固和电气连接产品及其方案，力争成为全球客户之首选；</p>
+        <p :class="$style.title"> 策略</p>
+        <p :class="$style.content">在所选领域持续改善、奋力创新，通过为客户提供安全、可靠、敏捷的供应链
+  服务，寻求能够提供市场领先地位之础石；</p>
+      </fragment>
+
     </div>
   </fragment>
 </template>
 
 <script>
-import Banner from '@/assets/logo1.jpeg'
+import Banner from '@/assets/banner.jpeg'
+import DownloadBanner from '@/assets/download-banner.jpeg'
+
 export default {
   name: 'Introduction',
   components: {
   },
   methods: {
+    getProduct () {
+      return 'test introduction'
+    }
   },
   data () {
     return {
-      Banner
+      Banner : this.$route.path.includes('download') ? DownloadBanner : Banner,
+      isDownload: this.$route.path.includes('download')
     }
+  },
+  mounted () {
   }
 }
 </script>
@@ -44,7 +58,7 @@ export default {
   }
 
   .title {
-    font-size: 29px;
+    font-size: 24px;
     margin-top: 18px;
   }
 
@@ -56,10 +70,10 @@ export default {
   }
 
   .banner {
-    height: 354px;
+    aspect-ratio: 3.72 / 1;
     background-size: cover;
     color: white;
-    padding: 62px 40px 0 62px;
+    padding: 62px 40px 0 140px;
     font-weight: 300;
     font-family: "Futura LT W01 Book","Helvetica Neue",Helvetica,Arial,sans-serif;
   }
