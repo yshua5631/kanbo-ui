@@ -12,7 +12,7 @@
           <img src="@/assets/download/d2.jpeg" alt="download">
           <p :class="$style.description"> 防爆连接器 </p>
         </a>
-        <a :class="$style.item" href="https://kanbo.oss-cn-shanghai.aliyuncs.com/%E4%BE%83%E5%8D%9A%E7%94%B5%E6%B0%94-%E9%98%B2%E7%88%86%E8%BF%9E%E6%8E%A5%E5%99%A8-%E9%80%89%E5%9E%8B%E6%89%8B%E5%86%8C2021.pdf">
+        <a :class="$style.item">
           <img src="@/assets/download/d3.jpeg" alt="download">
           <p :class="$style.description"> 防爆接头和机箱 </p>
         </a>
